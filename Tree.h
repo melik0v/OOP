@@ -14,6 +14,7 @@ using namespace std;
 		void InData(ifstream& ifst); // ввод
 		void Out(ofstream& ofst); // вывод
 		tree() {  } // создание без инициализации.
+		int consonants();
 	};
 
 

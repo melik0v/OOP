@@ -18,6 +18,7 @@
 			void Out(ofstream& ofst); // вывод
 			container(); // инициализация контейнера
 			~container(); // утилизация контейнера
+			
 
 		private:
 			Node* First;

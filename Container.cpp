@@ -60,6 +60,7 @@
 		{
 			ofst << i + 1 << ": ";
 			Temp->plant->Out(ofst);
+			ofst << "Consonants = " << Temp->plant->consonants() << endl;
 			Temp = Temp->Next;
 		}
 		ofst << endl;

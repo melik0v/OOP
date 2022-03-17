@@ -23,3 +23,4 @@ using namespace std;
 		pt->InData(ifst);
 		return pt;
 	}
+	
