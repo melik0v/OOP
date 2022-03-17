@@ -53,6 +53,7 @@
 
 	void container::Out(ofstream& ofst)
 	{
+		sort();
 		Node* Temp = First;
 		ofst << "List contains " << SizeList << " elements" << endl;
 
@@ -64,5 +65,44 @@
 			Temp = Temp->Next;
 		}
 		ofst << endl;
+	}
+
+	void container::sort() {
+		if (SizeList < 2) {
+			return;
+		}
+
+		Node* current = First;
+		bool flag = false;
+
+		do
+		{
+			current = First;
+			flag = false;
+			for (int i = 0; i < (SizeList - 1); ++i)
+			{
+				if (compare(current->plant, current->Next->plant))
+				{
+					swap(current, current->Next);
+					flag = true;
+				}
+				else
+				{
+					current = current->Next;
+				}
+			}
+		} while (flag);
+	}
+
+	bool container::compare(plant* first, plant* second) {
+		return first->consonants() > second->consonants();
+	}
+
+	void container::swap(Node* first, Node* second) {
+		plant* tmp;
+		tmp = first->plant;
+		first->plant = second->plant;
+		second->plant = tmp;
+		return;
 	}
 
