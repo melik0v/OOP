@@ -8,6 +8,8 @@ using namespace std;
 		mof = (bush::Month)temp;
 	}
 
+
+
 	void bush::Out(ofstream& ofst) {
 		switch (mof)
 		{

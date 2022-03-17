@@ -7,6 +7,14 @@ List contains 6 elements
 5: It is Bush: month of flowering = May, name = Strawberry
 6: It is Tree: age = 10, name = Birch
 
+1: It is Tree: age = 25, name = Pine
+2: 
+3: It is Tree: age = 15, name = Oak
+4: 
+5: 
+6: It is Tree: age = 10, name = Birch
+
 Empty container. 
 List contains 0 elements
+
 

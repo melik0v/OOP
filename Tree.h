@@ -13,6 +13,7 @@ using namespace std;
 		// переопределяем интерфейс класса
 		void InData(ifstream& ifst); // ввод
 		void Out(ofstream& ofst); // вывод
+		void OutTree(ofstream& ofst);
 		tree() {  } // создание без инициализации.
 	};
 

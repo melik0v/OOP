@@ -8,3 +8,9 @@ using namespace std;
 		ofst << "It is Tree: age = " << age
 			<< ", name = " << name << endl;
 	}
+
+	void tree::OutTree(ofstream& ofst) {
+		ofst << "It is Tree: age = " << age
+			<< ", name = " << name << endl;
+	}
+
