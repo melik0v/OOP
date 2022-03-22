@@ -7,9 +7,15 @@ using namespace std;
 	// явл€етс€ абстрактным, обеспечива€, тем самым,
 	// проверку интерфейса
 	class plant {
+		enum habitat {
+			TUNDRA = 1, DESERT, STEPPE,
+		};
+		habitat hbt;
 	public:
 		// иденитфикаци€, порождение и ввод фигуры из потока
 		static plant* In(ifstream& ifst);
-		virtual void InData(ifstream& ifst) = 0; // ввод
-		virtual void Out(ofstream& ofst) = 0; // вывод
+		virtual void InData(ifstream& ifst); // ввод
+		virtual void Out(ofstream& ofst); // вывод
+	protected:
+		plant() { };
 	};
