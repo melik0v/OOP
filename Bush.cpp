@@ -28,6 +28,8 @@ int bush::consonants() {
 		plant::InData(ifst);
 	}
 
+
+
 	void bush::Out(ofstream& ofst) {
 		switch (mof)
 		{

@@ -64,6 +64,15 @@
 			Temp = Temp->Next;
 		}
 		ofst << endl;
+		
+		for (int i = 0; i < SizeList; i++) {
+			ofst << i + 1 << ": ";
+			Temp->plant->OutTree(ofst);
+			Temp = Temp->Next;
+		}
+
+		ofst << endl;
+
 	}
 
 	void container::sort() {

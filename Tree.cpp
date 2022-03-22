@@ -30,3 +30,10 @@ using namespace std;
 		}
 		return count;
 	}
+	
+
+	void tree::OutTree(ofstream& ofst) {
+		ofst << "It is Tree: age = " << age
+			<< ", name = " << name << endl;
+	}
+

@@ -17,6 +17,7 @@ using namespace std;
 		virtual void InData(ifstream& ifst); // ввод
 		virtual void Out(ofstream& ofst); // вывод
 		virtual int consonants() { return 0; };
+		virtual void OutTree(ofstream& ofst) { ofst << endl; }
 	protected:
 		plant() { };
 	};
