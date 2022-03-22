@@ -3,6 +3,7 @@
 // геометрических фигурах
 #include "Tree.h"
 #include "Bush.h"
+#include "Flower.h"
 using namespace std;
 
 	// ¬вод параметров растени€
@@ -16,6 +17,9 @@ using namespace std;
 			break;
 		case 2:
 			pt = new bush;
+			break;
+		case 3:
+			pt = new flower;
 			break;
 		default:
 			return 0;
