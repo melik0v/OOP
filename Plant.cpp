@@ -50,3 +50,4 @@ void plant::Out(ofstream& ofst) // вывод
 
 		return pt;
 	}
+	

@@ -18,6 +18,9 @@
 			void Out(ofstream& ofst); // вывод
 			container(); // инициализация контейнера
 			~container(); // утилизация контейнера
+			void sort();
+			bool compare(plant* first, plant* second);
+			void swap(Node* first, Node* second);
 
 		private:
 			Node* First;
