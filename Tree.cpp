@@ -1,13 +1,25 @@
 #include "Tree.h"
+#include <string>
 using namespace std;
 	// ¬вод параметров пр€моугольника
 	void tree::InData(ifstream& ifst) {
-		ifst >> age >> name;
+		string temp;
+		ifst >> temp >> name;
+		if (isdigit(int(unsigned char(temp.front())))) {
+			age = stoi(temp);
+		}
+		if (age < 0)
+			age = -1;
+		if (strlen(name) > 48)
+			name[49] = '\0';
 		plant::InData(ifst);
 	}
 	void tree::Out(ofstream& ofst) {
-		ofst << "It is Tree: age = " << age
-			<< ", name = " << name << ", ";
+		if (age == -1)
+			ofst << "Wrong age" << ", name = " << name << endl;
+		else
+			ofst << "It is Tree: age = " << age
+				<< ", name = " << name << ", ";
 		plant::Out(ofst);
 		ofst << endl;
 	}

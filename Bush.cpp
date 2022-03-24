@@ -24,6 +24,8 @@ int bush::consonants() {
 	void bush::InData(ifstream& ifst) {
 		int temp;
 		ifst >> temp >> name;
+		if (strlen(name) > 48)
+			name[49] = '\0';
 		mof = (bush::Month)temp;
 		plant::InData(ifst);
 	}

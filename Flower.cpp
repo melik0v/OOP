@@ -20,5 +20,8 @@ void flower::Out(ofstream& ofst) {
 	case (WILD):
 		ofst << "It is Flower: type = " << "Wild" << endl;
 		break;
+	default:
+		ofst << "Wrong type of flower" << endl;
+		break;
 	}
 }

@@ -4,6 +4,7 @@
 #include "Tree.h"
 #include "Bush.h"
 #include "Flower.h"
+#include <iostream>
 using namespace std;
 
 void plant::InData(ifstream& ifst) // ввод
@@ -25,6 +26,9 @@ void plant::Out(ofstream& ofst) // вывод
 	case STEPPE:
 		ofst << "Habitat = steppe";
 		break;
+	default:
+		ofst << "Wrong habitat" << endl;
+		break;
 	}
 }
 
@@ -44,6 +48,7 @@ void plant::Out(ofstream& ofst) // вывод
 			pt = new flower;
 			break;
 		default:
+			cout << "Wrong input" << endl;
 			return 0;
 		}
 		pt->InData(ifst);
