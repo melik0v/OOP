@@ -145,6 +145,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Plant.cpp" />
     <ClCompile Include="Tree.cpp" />
+    <ClCompile Include="WrongPlant.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bush.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="Flower.h" />
     <ClInclude Include="Plant.h" />
     <ClInclude Include="Tree.h" />
+    <ClInclude Include="WrongPlant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

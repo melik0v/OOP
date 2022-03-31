@@ -1,5 +1,5 @@
 #pragma once
-
+#include <string>
 #include <fstream>
 using namespace std;
 
@@ -12,11 +12,13 @@ using namespace std;
 		};
 		habitat hbt;
 	public:
+		//char name[50];
+		string name;
 		// иденитфикация, порождение и ввод фигуры из потока
 		static plant* In(ifstream& ifst);
 		virtual void InData(ifstream& ifst); // ввод
 		virtual void Out(ofstream& ofst); // вывод
-		virtual int consonants() { return 0; };
+		virtual int consonants();
 		virtual void OutTree(ofstream& ofst) { ofst << endl; }
 	protected:
 		plant() { };
