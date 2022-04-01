@@ -4,14 +4,32 @@
 #include "Tree.h"
 #include "Bush.h"
 #include "Flower.h"
+<<<<<<< Updated upstream
+=======
+#include "WrongPlant.h"
+#include <string>
+>>>>>>> Stashed changes
 #include <iostream>
 using namespace std;
 
 void plant::InData(ifstream& ifst) // ввод
 {
+<<<<<<< Updated upstream
 	int tmp;
 	ifst >> tmp;
 	hbt = (plant::habitat)tmp;
+=======
+	//getline(ifst, name, ' ');
+	int tmp;
+	ifst >> name >> tmp;
+	if (ifst.fail())
+	{
+		hbt = (plant::habitat)WRONG_HABITAT;
+	}
+	hbt = (plant::habitat)tmp;
+	
+		
+>>>>>>> Stashed changes
 }
 void plant::Out(ofstream& ofst) // вывод	
 {
@@ -48,7 +66,11 @@ void plant::Out(ofstream& ofst) // вывод
 			pt = new flower;
 			break;
 		default:
+<<<<<<< Updated upstream
 			cout << "Wrong input" << endl;
+=======
+			cout << "Wrong plant!" << endl;
+>>>>>>> Stashed changes
 			return 0;
 		}
 		pt->InData(ifst);

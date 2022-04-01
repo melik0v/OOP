@@ -4,8 +4,28 @@ using namespace std;
 	// ¬вод параметров пр€моугольника
 	void tree::InData(ifstream& ifst) {
 		string temp;
+<<<<<<< Updated upstream
 		ifst >> temp >> name;
 		if (isdigit(int(unsigned char(temp.front())))) {
+=======
+		ifst >> temp;
+		bool valid = true;
+		if (temp == "\0")
+		{
+			age = WRONG_AGE;
+			return;
+		}
+		for (int i = 0; i < temp.length(); i++)
+		{
+			if (!isdigit(temp[i]) || i > 9 || temp == "\0")
+			{
+				age = WRONG_AGE;
+				valid = false;
+				break;
+			}
+		}
+		if (valid)
+>>>>>>> Stashed changes
 			age = stoi(temp);
 		}
 		if (age < 0)
