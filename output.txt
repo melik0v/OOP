@@ -2,17 +2,17 @@ Filled container.
 List contains 8 elements
 1: It is Tree: age = 25, Name = Pine, Habitat = desert
 Consonants = 2
-2: It is Bush: month of flowering = June, name = Raspberry, Name = Raspberry, Habitat = tundra
+2: It is Bush: month of flowering = June, Name = Raspberry, Habitat = tundra
 Consonants = 6
-3: It is Bush: month of flowering = July, name = Blueberry, Name = Blueberry, Habitat = desert
+3: It is Bush: month of flowering = July, Name = Blueberry, Habitat = desert
 Consonants = 5
 4: It is Tree: age = 10, Name = Birch, Habitat = desert
 Consonants = 4
-5: It is Bush: month of flowering = May, name = Strawberry, Name = Strawberry, Habitat = steppe
+5: It is Bush: month of flowering = May, Name = Strawberry, Habitat = steppe
 Consonants = 7
 6: It is Tree: age = 30, Name = Maple, Habitat = tundra
 Consonants = 3
-7: It is Bush: month of flowering = May, name = Cherry, Name = Cherry, Habitat = tundra
+7: It is Bush: month of flowering = May, Name = Cherry, Habitat = tundra
 Consonants = 4
 8: It is Flower: type = Garden, Name = Rose, Habitat = tundra
 Consonants = 2
@@ -36,13 +36,13 @@ Consonants = 2
 Consonants = 3
 4: It is Tree: age = 10, Name = Birch, Habitat = desert
 Consonants = 4
-5: It is Bush: month of flowering = May, name = Cherry, Name = Cherry, Habitat = tundra
+5: It is Bush: month of flowering = May, Name = Cherry, Habitat = tundra
 Consonants = 4
-6: It is Bush: month of flowering = July, name = Blueberry, Name = Blueberry, Habitat = desert
+6: It is Bush: month of flowering = July, Name = Blueberry, Habitat = desert
 Consonants = 5
-7: It is Bush: month of flowering = June, name = Raspberry, Name = Raspberry, Habitat = tundra
+7: It is Bush: month of flowering = June, Name = Raspberry, Habitat = tundra
 Consonants = 6
-8: It is Bush: month of flowering = May, name = Strawberry, Name = Strawberry, Habitat = steppe
+8: It is Bush: month of flowering = May, Name = Strawberry, Habitat = steppe
 Consonants = 7
 
 1: It is Tree: age = 25, name = Pine

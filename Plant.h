@@ -12,7 +12,6 @@ using namespace std;
 		};
 		habitat hbt;
 	public:
-		//char name[50];
 		string name;
 		// иденитфикация, порождение и ввод фигуры из потока
 		static plant* In(ifstream& ifst);

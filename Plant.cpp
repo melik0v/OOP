@@ -4,7 +4,6 @@
 #include "Tree.h"
 #include "Bush.h"
 #include "Flower.h"
-#include "WrongPlant.h"
 #include <string>
 using namespace std;
 #define WRONG_PLANT 0
@@ -23,16 +22,8 @@ void plant::InData(ifstream& ifst) // ввод
 }
 
 void plant::Out(ofstream& ofst) // вывод	
-{
-	if (name[0] == '\0')
-	{
-		ofst << "Name = None" << ", ";
-	}
-	else 
-	{
-		ofst << "Name = " << name << ", ";
-	}
-	
+{	
+	ofst << "Name = " << name << ", ";
 	switch (hbt)
 	{
 	case TUNDRA:
@@ -76,9 +67,7 @@ void plant::Out(ofstream& ofst) // вывод
 			pt = new flower;
 			break;
 		default:
-			pt = new WrongPlant;
-			getline(ifst, tmp, '\n');
-			break;
+			return 0;
 		}
 		pt->InData(ifst);
 		return pt;
