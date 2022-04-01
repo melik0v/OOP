@@ -4,21 +4,15 @@
 #include "Tree.h"
 #include "Bush.h"
 #include "Flower.h"
-<<<<<<< Updated upstream
-=======
-#include "WrongPlant.h"
 #include <string>
->>>>>>> Stashed changes
 #include <iostream>
+#define WRONG_HABITAT 0
+#define WRONG_PLANT 0
 using namespace std;
 
 void plant::InData(ifstream& ifst) // ввод
 {
-<<<<<<< Updated upstream
-	int tmp;
-	ifst >> tmp;
-	hbt = (plant::habitat)tmp;
-=======
+
 	//getline(ifst, name, ' ');
 	int tmp;
 	ifst >> name >> tmp;
@@ -27,12 +21,10 @@ void plant::InData(ifstream& ifst) // ввод
 		hbt = (plant::habitat)WRONG_HABITAT;
 	}
 	hbt = (plant::habitat)tmp;
-	
-		
->>>>>>> Stashed changes
 }
 void plant::Out(ofstream& ofst) // вывод	
 {
+	ofst << "Name = " << name << ", ";
 	switch (hbt)
 	{
 	case TUNDRA:
@@ -54,7 +46,14 @@ void plant::Out(ofstream& ofst) // вывод
 	plant* plant::In(ifstream& ifst) {
 		plant* pt;
 		int k;
-		ifst >> k;
+		string tmp;
+		ifst >> tmp;
+		if (tmp == "\0")
+			return 0;
+		if (!isdigit(int(tmp.front())) || tmp.length() > 1)
+			k = WRONG_PLANT;
+		else
+			k = stoi(tmp);
 		switch (k) {
 		case 1:
 			pt = new tree;
@@ -66,11 +65,7 @@ void plant::Out(ofstream& ofst) // вывод
 			pt = new flower;
 			break;
 		default:
-<<<<<<< Updated upstream
-			cout << "Wrong input" << endl;
-=======
 			cout << "Wrong plant!" << endl;
->>>>>>> Stashed changes
 			return 0;
 		}
 		pt->InData(ifst);

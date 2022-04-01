@@ -1,61 +1,46 @@
 Filled container. 
-<<<<<<< Updated upstream
 List contains 6 elements
-1: It is Tree: age = 25, name = Pine, Habitat = tundra
-Consonants = 2
-2: It is Bush: month of flowering = June, name = Raspberry, Habitat = desert
+1: It is Bush: month of flowering = June Name = Raspberry, Habitat = tundra
 Consonants = 6
-3: It is Tree: age = 15, name = Oak, Habitat = steppe
-Consonants = 1
-4: It is Bush: month of flowering = July, name = Blueberry, Habitat = tundra
+2: It is Bush: month of flowering = July Name = Blueberry, Habitat = desert
 Consonants = 5
-5: It is Bush: month of flowering = May, name = Strawberry, Habitat = desert
-Consonants = 7
-6: It is Tree: age = 10, name = Birch, Habitat = steppe
+3: It is Tree: age = 10, Name = Birch, Habitat = desert
 Consonants = 4
+4: It is Tree: age = 30, Name = Maple, Habitat = tundra
+Consonants = 3
+5: It is Bush: month of flowering = May Name = Cherry, Habitat = tundra
+Consonants = 4
+6: It is Flower: type = Garden
+Consonants = 0
 
-It is Tree: age = 25, name = Pine
-
-It is Tree: age = 15, name = Oak
 
 
 It is Tree: age = 10, name = Birch
+It is Tree: age = 30, name = Maple
+
+
 
 Sorted container. 
 List contains 6 elements
-1: It is Tree: age = 15, name = Oak, Habitat = steppe
-Consonants = 1
-2: It is Tree: age = 25, name = Pine, Habitat = tundra
-Consonants = 2
-3: It is Tree: age = 10, name = Birch, Habitat = steppe
+1: It is Flower: type = Garden
+Consonants = 0
+2: It is Tree: age = 30, Name = Maple, Habitat = tundra
+Consonants = 3
+3: It is Tree: age = 10, Name = Birch, Habitat = desert
 Consonants = 4
-4: It is Bush: month of flowering = July, name = Blueberry, Habitat = tundra
+4: It is Bush: month of flowering = May Name = Cherry, Habitat = tundra
+Consonants = 4
+5: It is Bush: month of flowering = July Name = Blueberry, Habitat = desert
 Consonants = 5
-5: It is Bush: month of flowering = June, name = Raspberry, Habitat = desert
+6: It is Bush: month of flowering = June Name = Raspberry, Habitat = tundra
 Consonants = 6
-6: It is Bush: month of flowering = May, name = Strawberry, Habitat = desert
-Consonants = 7
 
-It is Tree: age = 15, name = Oak
-It is Tree: age = 25, name = Pine
+
+It is Tree: age = 30, name = Maple
 It is Tree: age = 10, name = Birch
 
 
 
-=======
-List contains 1 elements
-1: It is Bush: month of flowering = June Name = Raspberry, Habitat = desert
-Consonants = 6
-
-1: 
-
-Sorted container. 
-List contains 1 elements
-1: It is Bush: month of flowering = June Name = Raspberry, Habitat = desert
-Consonants = 6
-
-1: 
->>>>>>> Stashed changes
 
 Empty container. 
 List contains 0 elements

@@ -25,13 +25,6 @@ int bush::consonants() {
 
 	// Ввод параметров кустарника
 	void bush::InData(ifstream& ifst) {
-<<<<<<< Updated upstream
-		int temp;
-		ifst >> temp >> name;
-		if (strlen(name) > 48)
-			name[49] = '\0';
-		mof = (bush::Month)temp;
-=======
 		string temp;
 		ifst >> temp;
 		if (temp == "\0")
@@ -54,7 +47,6 @@ int bush::consonants() {
 			if (valid)
 				mof = (bush::Month)stoi(temp);
 		}
->>>>>>> Stashed changes
 		plant::InData(ifst);
 	}
 
@@ -100,11 +92,7 @@ int bush::consonants() {
 			ofst << "It is Bush: month of flowering = " << "December ";
 			break;
 		default:
-<<<<<<< Updated upstream
-			ofst << "Error: " << mof << " is invalid number of month" << endl;
-=======
 			ofst << "It is Bush, invalid number of month" << endl;
->>>>>>> Stashed changes
 			break;
 		}
 		plant::Out(ofst);

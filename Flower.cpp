@@ -1,10 +1,20 @@
 #include "Flower.h"
+#define WRONG_FLOWER 0
+
 
 
 void flower::InData(ifstream& ifst) {
 	int temp;
 	ifst >> temp;
-	tof = (flower::type)temp;
+	if (ifst.fail())
+	{
+		tof = (flower::type)WRONG_FLOWER;
+	}
+	else
+	{
+		tof = (flower::type)temp;
+	}
+	
 }
 
 // Output function for flower

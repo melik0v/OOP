@@ -1,13 +1,10 @@
 #include "Tree.h"
 #include <string>
+#define WRONG_AGE -1
 using namespace std;
 	// ¬вод параметров пр€моугольника
 	void tree::InData(ifstream& ifst) {
 		string temp;
-<<<<<<< Updated upstream
-		ifst >> temp >> name;
-		if (isdigit(int(unsigned char(temp.front())))) {
-=======
 		ifst >> temp;
 		bool valid = true;
 		if (temp == "\0")
@@ -25,21 +22,15 @@ using namespace std;
 			}
 		}
 		if (valid)
->>>>>>> Stashed changes
 			age = stoi(temp);
-		}
-		if (age < 0)
-			age = -1;
-		if (strlen(name) > 48)
-			name[49] = '\0';
 		plant::InData(ifst);
-	}
+		}
+
 	void tree::Out(ofstream& ofst) {
 		if (age == -1)
 			ofst << "Wrong age" << ", name = " << name << endl;
 		else
-			ofst << "It is Tree: age = " << age
-				<< ", name = " << name << ", ";
+			ofst << "It is Tree: age = " << age << ", ";
 		plant::Out(ofst);
 		ofst << endl;
 	}

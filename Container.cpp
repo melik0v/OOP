@@ -18,8 +18,12 @@
 			SizeList--;
 		}
 		if (SizeList == 1)
+		{
+			SizeList--;
 			delete First;
-		SizeList--;
+		}
+			
+		
 	}
 
 	void container::In(ifstream& ifst)
