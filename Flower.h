@@ -1,13 +1,15 @@
 #pragma once
 #include "Plant.h"
 #include <fstream>
-class flower: public plant {
-	enum type {
+class Flower : public Plant
+{
+	enum Type
+	{
 		HOME = 1,
 		GARDEN,
 		WILD,
 	};
-	type tof; // type of flower
+	Type _tof; // type of flower
 
 public:
 	void InData(ifstream& ifst);

@@ -1,19 +1,16 @@
-
 #include "Plant.h"
-#pragma once// Требеутся описание класса plant
-
 #include <fstream>
+#pragma once
 using namespace std;
-
-	// дерево
-	class tree : public plant {
-		int age; // возраст
-	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream& ifst); // ввод
-		void Out(ofstream& ofst); // вывод
-		void OutTree(ofstream& ofst);
-		tree() {  } // создание без инициализации.
-	};
+// дерево
+class Tree : public Plant {
+	int _age; // возраст
+public:
+	// переопределяем интерфейс класса
+	void InData(ifstream& ifst); // ввод
+	void Out(ofstream& ofst); // вывод
+	void OutTree(ofstream& ofst);
+	Tree() {} // создание без инициализации.
+};
 
 

@@ -1,17 +1,17 @@
 #include "Flower.h"
 
-
-void flower::InData(ifstream& ifst) {
+void Flower::InData(ifstream& ifst) 
+{
 	int temp;
 	ifst >> temp;
-	tof = (flower::type)temp;
-	plant::InData(ifst);
+	_tof = (Flower::Type)temp;
+	Plant::InData(ifst);
 }
 
 // Output function for flower
-void flower::Out(ofstream& ofst) {
-	
-	switch (tof)
+void Flower::Out(ofstream& ofst) 
+{
+	switch (_tof)
 	{
 	case (HOME):
 		ofst << "It is Flower: type = " << "Home" << ", ";
@@ -23,5 +23,5 @@ void flower::Out(ofstream& ofst) {
 		ofst << "It is Flower: type = " << "Wild" << ", ";
 		break;
 	}
-	plant::Out(ofst);
+	Plant::Out(ofst);
 }
