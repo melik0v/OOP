@@ -17,14 +17,12 @@ Consonants = 4
 8: It is Flower: type = Garden, Name = Rose, Habitat = tundra
 Consonants = 2
 
-1: It is Tree: age = 25, name = Pine
-2: 
-3: 
-4: It is Tree: age = 10, name = Birch
-5: 
-6: It is Tree: age = 30, name = Maple
-7: 
-8: 
+It is Tree: age = 25, Name = Pine, Habitat = desert
+Consonants = 2
+It is Tree: age = 10, Name = Birch, Habitat = desert
+Consonants = 4
+It is Tree: age = 30, Name = Maple, Habitat = tundra
+Consonants = 3
 
 Sorted container. 
 List contains 8 elements
@@ -45,16 +43,13 @@ Consonants = 6
 8: It is Bush: month of flowering = May, Name = Strawberry, Habitat = steppe
 Consonants = 7
 
-1: It is Tree: age = 25, name = Pine
-2: 
-3: It is Tree: age = 30, name = Maple
-4: It is Tree: age = 10, name = Birch
-5: 
-6: 
-7: 
-8: 
+It is Tree: age = 25, Name = Pine, Habitat = desert
+Consonants = 2
+It is Tree: age = 30, Name = Maple, Habitat = tundra
+Consonants = 3
+It is Tree: age = 10, Name = Birch, Habitat = desert
+Consonants = 4
 
 Empty container. 
 List contains 0 elements
-
 

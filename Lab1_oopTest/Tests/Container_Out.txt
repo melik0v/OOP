@@ -1,0 +1,18 @@
+List contains 8 elements
+1: It is Tree: age = 25, Name = Pine, Habitat = desert
+Consonants = 10
+2: It is Bush: month of flowering = June, Name = Raspberry, Habitat = tundra
+Consonants = 30
+3: It is Bush: month of flowering = July, Name = Blueberry, Habitat = desert
+Consonants = 25
+4: It is Tree: age = 10, Name = Birch, Habitat = desert
+Consonants = 20
+5: It is Bush: month of flowering = May, Name = Strawberry, Habitat = steppe
+Consonants = 35
+6: It is Tree: age = 30, Name = Maple, Habitat = tundra
+Consonants = 15
+7: It is Bush: month of flowering = May, Name = Cherry, Habitat = tundra
+Consonants = 20
+8: It is Flower: type = Garden, Name = Rose, Habitat = tundra
+Consonants = 10
+

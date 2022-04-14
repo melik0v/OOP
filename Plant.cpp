@@ -73,6 +73,10 @@ void plant::Out(ofstream& ofst) // вывод
 		return pt;
 	}
 	
+	bool plant::compare(plant second) {
+		return consonants() > second.consonants();
+	}
+
 	int plant::consonants() {
 
 		char consonants[40] = { 'B', 'b', 'C', 'c', 'D', 'd', 'F', 'f', 'G', 'g', 'H', 'h', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'P', 'p', 'Q', 'q',

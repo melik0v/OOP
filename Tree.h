@@ -7,8 +7,9 @@ using namespace std;
 
 	// дерево
 	class tree : public plant {
-		int age; // возраст
 	public:
+		int age; // возраст
+	
 		// переопределяем интерфейс класса
 		void InData(ifstream& ifst); // ввод
 		void Out(ofstream& ofst); // вывод

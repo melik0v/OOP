@@ -4,6 +4,7 @@
 
 	// кустарник
 	class bush : public plant {
+	public:
 		enum Month
 		{
 			JANUARY = 1,
@@ -20,7 +21,7 @@
 			DECEMBER,
 		};
 		Month mof; // Month of flowering - мес€ц цветени€
-	public:
+	
 		// переопредел€ем интерфейс класса
 		void InData(ifstream& ifst); // ввод
 		void Out(ofstream& ofst); // вывод

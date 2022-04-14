@@ -5,20 +5,7 @@
 using namespace std;
 	// ¬вод параметров пр€моугольника
 	void tree::InData(ifstream& ifst) {
-		string temp;
-		ifst >> temp;
-		bool valid = true;
-		for (int i = 0; i < temp.length(); i++)
-		{
-			if (!isdigit(temp[i]) || i > 9)
-			{
-				age = WRONG_AGE;
-				valid = false;
-				break;
-			}
-		}
-		if (valid)
-			age = stoi(temp);
+		ifst >> age;
 		plant::InData(ifst);
 	}
 	void tree::Out(ofstream& ofst) {
@@ -35,17 +22,9 @@ using namespace std;
 
 	}
 
-	
 
-	void tree::OutTree(ofstream& ofst) {
-		if (age == WRONG_AGE)
-		{
-			ofst << "It is Tree: wrong age, ";
-		}
-		else
-		{
-			ofst << "It is Tree: age = " << age << ", name = " << name << endl;
-		}
-		
+	void tree::OutTree(ofstream& ofst) 
+	{
+		tree::Out(ofst);
 	}
 

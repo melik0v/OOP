@@ -1,0 +1,7 @@
+It is Tree: age = 25, Name = Pine, Habitat = desert
+Consonants = 2
+It is Tree: age = 10, Name = Birch, Habitat = desert
+Consonants = 4
+It is Tree: age = 30, Name = Maple, Habitat = tundra
+Consonants = 3
+

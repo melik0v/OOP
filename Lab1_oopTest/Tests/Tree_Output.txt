@@ -1,0 +1,2 @@
+It is Tree: age = 10, Name = Pine, Habitat = steppe
+Consonants = 10
