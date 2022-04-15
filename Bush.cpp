@@ -64,3 +64,16 @@ using namespace std;
 			break;
 		}
 	}
+
+	void bush::Multi_Method(plant* other, ofstream& ofst)
+	{
+		other->Multi_Method_Bush(ofst);
+	}
+	void bush::Multi_Method_Tree(ofstream& ofst)
+	{
+		ofst << "Tree and Bush" << endl;
+	}
+	void bush::Multi_Method_Bush(ofstream& ofst)
+	{
+		ofst << "Bush and Bush" << endl;
+	}

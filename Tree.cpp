@@ -8,3 +8,16 @@ using namespace std;
 		ofst << "It is Tree: age = " << age
 			<< ", name = " << name << endl;
 	}
+
+	void tree::Multi_Method(plant* other, ofstream& ofst)
+	{
+		other->Multi_Method_Tree(ofst);
+	}
+	void tree::Multi_Method_Tree(ofstream& ofst)
+	{
+		ofst << "Tree and Tree" << endl;
+	}
+	void tree::Multi_Method_Bush(ofstream& ofst)
+	{
+		ofst << "Bush and Tree" << endl;
+	}

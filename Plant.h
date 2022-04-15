@@ -12,4 +12,8 @@ using namespace std;
 		static plant* In(ifstream& ifst);
 		virtual void InData(ifstream& ifst) = 0; // ввод
 		virtual void Out(ofstream& ofst) = 0; // вывод
+
+		virtual void Multi_Method(plant* other, ofstream& fout) {};
+		virtual void Multi_Method_Tree(ofstream& fout) {};
+		virtual void Multi_Method_Bush(ofstream& fout) {};
 	};

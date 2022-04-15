@@ -18,7 +18,7 @@
 			void Out(ofstream& ofst); // вывод
 			container(); // инициализация контейнера
 			~container(); // утилизация контейнера
-
+			void Multi_Method(ofstream& ofst);
 		private:
 			Node* First;
 			Node* Last;
