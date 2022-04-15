@@ -117,3 +117,23 @@ void Container::Swap(Node* first, Node* second)
 	return;
 }
 
+void Container::MultiMethod(ofstream& ofst)
+{
+	Node* current_first = _first;
+	Node* current_second = current_first->_next;
+
+	ofst << "Multimethod." << endl;
+	for (int i = 0; i < _sizeList - 1; i++)
+	{
+		for (int j = i + 1; j < _sizeList; j++)
+		{
+			current_first->_plant->MultiMethod(current_second->_plant, ofst);
+			current_first->_plant->Out(ofst);
+			current_second->_plant->Out(ofst);
+			current_second = current_second->_next;
+			ofst << endl;
+		}
+		current_first = current_first->_next;
+		current_second = current_first->_next;
+	}
+}

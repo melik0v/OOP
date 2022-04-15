@@ -22,6 +22,12 @@ public:
 	virtual void Out(ofstream& ofst); // вывод
 	virtual int Consonants();
 	virtual void OutTree(ofstream& ofst) { ofst << endl; }
+
+	virtual void MultiMethod(Plant* other, ofstream& fout) {};
+	virtual void MultiMethodTree(ofstream& fout) {};
+	virtual void MultiMethodBush(ofstream& fout) {};
+	virtual void MultiMethodFlower(ofstream& fout) {};
+
 protected:
 	Plant() { };
 };

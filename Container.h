@@ -18,6 +18,7 @@ public:
 	void Out(ofstream& ofst); // вывод
 	Container(); // инициализация контейнера
 	~Container(); // утилизация контейнера
+	void MultiMethod(ofstream& ofst);
 	void Sort();
 	bool Compare(Plant* first, Plant* second);
 	void Swap(Node* first, Node* second);

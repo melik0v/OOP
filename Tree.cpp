@@ -28,11 +28,11 @@ void Tree::Out(ofstream& ofst)
 {
 	if (_age == WRONG_AGE)
 	{
-		ofst << "It is Tree: wrong _age, ";
+		ofst << "It is Tree: wrong age, ";
 	}
 	else
 	{
-		ofst << "It is Tree: _age = " << _age << ", ";
+		ofst << "It is Tree: age = " << _age << ", ";
 	}
 
 	Plant::Out(ofst);
@@ -43,11 +43,28 @@ void Tree::Out(ofstream& ofst)
 void Tree::OutTree(ofstream& ofst) {
 	if (_age == WRONG_AGE)
 	{
-		ofst << "It is Tree: wrong _age, ";
+		ofst << "It is Tree: wrong age, ";
 	}
 	else
 	{
-		ofst << "It is Tree: _age = " << _age << ", _name = " << _name << endl;
+		ofst << "It is Tree: age = " << _age << ", Name = " << _name << endl;
 	}
 }
 
+
+void Tree::MultiMethod(Plant* other, ofstream& ofst)
+{
+	other->MultiMethodTree(ofst);
+}
+void Tree::MultiMethodTree(ofstream& ofst)
+{
+	ofst << "Tree and Tree" << endl;
+}
+void Tree::MultiMethodBush(ofstream& ofst)
+{
+	ofst << "Bush and Tree" << endl;
+}
+void Tree::MultiMethodFlower(ofstream& ofst)
+{
+	ofst << "Flower and Tree" << endl;
+}

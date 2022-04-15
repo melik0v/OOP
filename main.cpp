@@ -19,6 +19,9 @@ int main(int argc, char* argv[])
 	Container.In(ifst);
 	ofst << "Filled container. " << endl;
 	Container.Out(ofst);
+	ofst << endl;
+	Container.MultiMethod(ofst);
+	ofst << endl;
 	ofst << "Sorted container. " << endl;
 	Container.Sort();
 	Container.Out(ofst);

@@ -1,5 +1,5 @@
-1 25 
-Pine 2
+3 1 Aster 1
+1 25 Pine 2
 2 6 Raspberry 1
 2 7 Blueberry 2
 1 10 Birch 2

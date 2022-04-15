@@ -72,3 +72,20 @@ void Bush::Out(ofstream& ofst)
 	}
 	Plant::Out(ofst);
 }
+
+void Bush::MultiMethod(Plant* other, ofstream& ofst)
+{
+	other->MultiMethodBush(ofst);
+}
+void Bush::MultiMethodTree(ofstream& ofst)
+{
+	ofst << "Tree and Bush" << endl;
+}
+void Bush::MultiMethodBush(ofstream& ofst)
+{
+	ofst << "Bush and Bush" << endl;
+}
+void Bush::MultiMethodFlower(ofstream& ofst)
+{
+	ofst << "Flower and Bush" << endl;
+}
